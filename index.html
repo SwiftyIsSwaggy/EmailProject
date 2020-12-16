@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Compose Email</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> 
+</head>
+
+<body>
+    <section class="Form my-3 mx-3">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-5"><img class="img-fluid" src="assets/img/send.svg" style="margin-top: 60px;padding-top: 15px;"></div>
+                <div class="col-lg-7 px-4 pt-5">
+                    <h1 class="font-weight-bold py-3" style="color: rgb(3,81,159);">Compose Email</h1>
+                    <form method="POST">
+                        <div class="form-row">
+                            <div class="col-lg-9">
+                                <h4>Sender</h4><input class="form-control my-3 p-4" type="email" placeholder="Sender's Email" id="senderEm"><input class="form-control my-3 p-4" type="password" placeholder="Sender's Password" id="senderPwd">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-9">
+                                <h4>Receiver</h4><input class="form-control my-3 p-4" type="email" placeholder="Receiver's email" id="receverEm">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-9"><textarea class="form-control my-3 p-4" placeholder="Type your message here..." id="emailCont"></textarea></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-9">
+                                <div class="btn-group" role="group"><button class="btn btn-1 mt-3 mb-5 mr-3" type="button" style="border-radius: 9px;" onclick="sendEmail()">Send</button><button class="btn btn-2 mt-3 mb-5" type="button" style="border-radius: 10px;">Cancel</button></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="assets/js/sendmail.js"></script> 
+    <script src="assets/js/warning.js"></script> 
+</body>
+
+</html>
