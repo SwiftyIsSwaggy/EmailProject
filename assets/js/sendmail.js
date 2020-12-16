@@ -10,6 +10,10 @@ function sendEmail() {
     }) 
       .then(function (message) { 
         alert("mail sent successfully") 
+        document.getElementById("senderEm").value="";
+        document.getElementById("senderPwd").value="";
+        document.getElementById("receverEm").value=""; 
+        document.getElementById("emailCont").value="";
       }); 
   } 
 function cancel(){
